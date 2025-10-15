@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:news_app/widgets/category_list_view.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -24,7 +25,7 @@ class HomePage extends StatelessWidget {
           ),
         ),
       ),
-      body: const Text('Home Page'),
+      body: const CategoryListView(),
     );
   }
 }
