@@ -10,17 +10,17 @@ class CategoryCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final size = MediaQuery.of(context).size;
     return Padding(
       padding: const EdgeInsets.only(right: 8.0),
       child: Container(
-        height: 75,
-        width: 135,
+        height: size.height * 0.1,
+        width: size.width * 0.35,
         decoration: BoxDecoration(
           image: DecorationImage(
             fit: BoxFit.cover,
             image: AssetImage(category.imgPath),
           ),
-          // color: Colors.orange,
           borderRadius: BorderRadius.circular(8),
         ),
         child: Center(
