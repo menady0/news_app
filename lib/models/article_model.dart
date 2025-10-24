@@ -9,6 +9,6 @@ class ArticleModel {
     required String? desc,
   }) : imgPath =
            imgPath ??
-           "https://images.pexels.com/photos/158651/news-newsletter-newspaper-information-158651.jpeg",
+           "https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png",
        desc = desc ?? '';
 }

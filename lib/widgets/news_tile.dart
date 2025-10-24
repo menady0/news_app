@@ -20,6 +20,14 @@ class NewsTile extends StatelessWidget {
               height: size.height * 0.35,
               width: double.infinity,
               fit: BoxFit.cover,
+              errorBuilder:
+                  (context, error, stackTrace) {
+                    return const Icon(
+                      Icons.broken_image,
+                      size: 50,
+                      color: Colors.grey,
+                    );
+                  },
             ),
           ),
           const SizedBox(height: 8),
